@@ -1,42 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<title>Advanced Currency Converter</title>
-<link rel="stylesheet" href="styling.css">
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izhar Frontend Developer</title>
+    <meta name="description" content="Frontend developer portfolio Clean UI &amp; modern web apps.">
+    <meta name="keywords" content="Frontend, Developer, Portfolio, JavaScript">
+    <meta name="author" content="Izhar">
+<link rel="icon" href="Assets/IMAGES/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
-<body>
+
+<body class="dark dark-mode">
+    <div class="container">
+        <nav class="navbar" style="background-color:  hsl(349, 94%, 66%);">
+            <div>
+                <img src="Assets/IMAGES/logo.png" alt="" width="90px">
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle dark" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
 <div class="container">
-  <h2>Currency Converter</h2>
+    <section id="home" style="margin-top: 80px;">
+        <div class="hero">
+            <div class="hero-content fade-up">
+                <h1>Izhar Ul Haq <span class="highlight" style="background-color: hsl(352, 100%, 58%); border-radius: 5px;">👨‍💻</span></h1>
+                <div class="hero-sub">Frontend Developer · Html Specialist</div>
+                <p class="hero-desc">Building pixel-perfect, responsive web apps with CSS, Bootstrape, and modern JS. 6+
+                    month of crafting smooth UIs.</p>
+                <p>
+                    Develop user-facing features using HTML, CSS, and JavaScript.Ensure websites are responsive and work
+                    on mobile, tablet, and desktop.Optimize applications for maximum speed and performance. Maintain
+                    cross-browser compatibilityWork with frameworks like, Vue, or Bootstrap. Collaborate with backend
+                    developers to integrate APIs and data. Debug, test, and improve usability
+                </p>
+                <div class="btn-group" style="margin-top: 50px;">
+                    <a href="#projects" class="btn btn-primary" style="background-color:  hsl(349, 97%, 63%)">View Projects</a>
+                    <a href="https://wa.me/923101249480" target="_blank" class="btn btn-outline" style="background-color:  hsl(349, 97%, 63%)">Hire - Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Assets/IMAGES/profile.png" alt="profile-image" class="profile-pic" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(145deg, #2563eb, #7c3aed); color: white; font-size: 5rem; border-radius: 50%;" w="">
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <section id="about">
+        <h2 class="section-title">About me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Hi, I'm Izahar — frontend developer with 6 month of experience building accessible, performant web
+                    applications. I started as a freelancer, now I'm working full-time at a digital agency. I love
+                    turning complex ideas into clean, minimal interfaces.</p>
+                <p style="margin-top: 16px;"><strong>⚡ interests:</strong>Design systems, web animations, and making the
+                    web beautiful. My goal: become a lead frontend architect and contribute to open source.</p>
+                <p>
+                    I create fully responsive websites that look perfect on all devices — desktops, tablets, and mobile
+                    phones. My layouts are modern, user-friendly, and optimized for performance.tenance &amp; Updates. I
+                    provide ongoing support, updates, and improvements to keep your website modern and secure. Your
+                    website will work seamlessly on Chrome, Firefox, Edge, Safari, and all major browsers.
+                </p>
+                <a href="https://wa.me/923101249480" target="_blank" class="btn btn-outline" style="margin-top: 50px; background-color:  hsl(349, 97%, 63%);">Hire - Me</a>
 
-  <div class="amount">
-    <label>Enter Amount</label>
-    <input type="number" id="amount" value="1" min="1">
-  </div>
-
-  <div class="dropdown">
-
-    <div class="select-container">
-      <img id="fromFlag" src="">
-      <select id="from"></select>
-    </div>
-
-    <div class="swap" id="swap">⇄</div>
-
-    <div class="select-container">
-      <img id="toFlag" src="">
-      <select id="to"></select>
-    </div>
-
-  </div>
-
-  <button class="btn">Convert</button>
-
-  <div class="result" id="result">Result will appear here</div>
+            </div>
+            <div class="about-info">
+                <div class="info-item"><span>🧑‍💻 status:</span> Working professional (Frontend dev)</div>
+                <div class="info-item"><span>📅 years:</span> 6+ month</div>
+                <div class="info-item"><span>🎯 current:</span> UI engineer @ CreativeMint</div>
+                <div class="info-item"><span>🎸 fun fact:</span> I play bass guitar and brew my own kombucha</div>
+                <div class="fun-fact"><i class="fas fa-cat" style="color:  hsl(349, 97%, 63%);"></i> Hobbies: hiking, retro gaming, pixel art</div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <section id="skills">
+        <h2 class="section-title">Technical skills</h2>
+        <div class="skills-category">
+            <h3>Languages</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-html5" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">HTML5</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card"><i class="fab fa-css3-alt" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">CSS3</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card"><i class="fab fa-js" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h3>Frameworks &amp; Libs</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-bootstrap" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">Bootstrap</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card"><i class="fas fa-wind" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">J Querry</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h3>Tools &amp; others</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                <i class="fab fa-git-alt" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">Git/GitHub</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card"><i class="fas fa-paint-brush" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">Figma</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">VS Code</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card"><i class="fas fa-plug" style="color:  hsl(349, 97%, 63%);"></i>
+                    <div class="skill-name">API Integration</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img" style="color:  hsl(349, 97%, 63%);"><i class="fas fa-shopping-cart"></i> E-commerce UI</div>
+                <div class="project-content">
+                    <div class="project-title">UrbanStore concept</div>
+                    <div class="project-desc">Fully responsive e-commerce interface with cart, filters, and product
+                        quick view.</div>
+                    <div class="project-tech"><span class="tech-tag">HTML5</span><span class="tech-tag">J Querry</span><span class="tech-tag">Redux</span></div>
+                    <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="color:  hsl(349, 97%, 63%);"><i class="fas fa-tachometer-alt"></i> AdminKit</div>
+                <div class="project-content">
+                    <div class="project-title">Admin Dashboard</div>
+                    <div class="project-desc">Analytics dashboard with charts, dark mode, and dynamic widgets.</div>
+                    <div class="project-tech"><span class="tech-tag">Js</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">Chart.js</span></div>
+                    <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="color:  hsl(349, 97%, 63%); "><i class="fas fa-cloud-sun"></i> WeatherNow</div>
+                <div class="project-content">
+                    <div class="project-title">Weather App (API)</div>
+                    <div class="project-desc">Real-time weather using OpenWeather API, geolocation, and animated icons.
+                    </div>
+                    <div class="project-tech"><span class="tech-tag">JS</span><span class="tech-tag">API</span><span class="tech-tag">CSS</span></div>
+                    <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="color:  hsl(349, 97%, 63%); "><i class="fas fa-check-circle"></i> Todo Flow</div>
+                <div class="project-content">
+                    <div class="project-title">Productivity Todo</div>
+                    <div class="project-desc">Drag-drop tasks, local storage, and smooth animations.</div>
+                    <div class="project-tech"><span class="tech-tag">Css3</span><span class="tech-tag">Bootstrape</span>
+                    </div>
+                    <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="color:  hsl(349, 97%, 63%);"><i class="fas fa-user"></i> Portfolio v2</div>
+                <div class="project-content">
+                    <div class="project-title">Minimal portfolio</div>
+                    <div class="project-desc">This portfolio you're viewing (dogfooding) built with HTML/CSS/JS.</div>
+                    <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span></div>
+                    <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
-<script src="app.js"></script>
+<div class="container">
+    <section id="education">
+        <h2 class="section-title">Experience &amp; Education</h2>
+        <div class="exp-item">
+            <p style="font-size: larger;">
+                <i>
+                    I completed my Matriculation with an A Grade, demonstrating strong academic performance and
+                    dedication to learning. Currently, I am pursuing my ADSE (Advanced Diploma in Software Engineering)
+                    while also continuing my Intermediate studies. Alongside my academic journey, I have successfully
+                    become a Certified Frontend Developer, equipped with practical skills in modern web technologies and
+                    passionate about building responsive, user-friendly web applications.
+
+                </i>
+            </p>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section id="contact">
+        <h2 class="section-title">Let's connect</h2>
+        <div class="contact-row">
+            <div class="contact-info">
+                <div>
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=izharulhaqhere@gmail.com&amp;su=Project" target="_blank" style="text-decoration: none; color: hsl(349, 97%, 63%);"><i class="fas fa-envelope"></i>izharulhaqhere@gmail.com</a>
+
+                </div>
+                <div style="margin: 10px;">
+                    <a href="https://wa.me/923101249480" target="_blank" style="text-decoration: none; color: hsl(349, 97%, 63%);"><i class="fab fa-whatsapp"></i>+92 3101249480</a>
+<div style="margin: 10px;">
+    <img src="Assets/IMAGES/Qr-code.png" width="150px" alt="scan code">
+</div>
+                </div>
+            </div>
+ <div id="contact-form" style="width: 75%; display: flex; flex-direction: column; gap: 30px;">
+  <input id="name" class="form-input" type="text" placeholder="Your Name" aria-label="Name" style="border-radius: 28px; padding: 10px;">
+  <input id="email" class="form-input" type="email" placeholder="Email Address" aria-label="Email" style="border-radius: 28px; padding: 10px;">
+  <textarea id="message" class="form-input" rows="4" placeholder="Message" style="border-radius: 28px; padding: 10px;"></textarea>
+  <button id="sendBtn" class="btn btn-primary" style="align-self: flex-start; background-color: hsl(349, 97%, 63%); border: none; padding: 10px 20px; border-radius: 28px; cursor: pointer;">Send Message</button>
+</div>
+        </div>
+    </section>
+</div>
+
+            
+    
+        
+    
+
+
+<footer>
+    <div class="social-links" style="display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+            gap: 15px; 
+            justify-items: center; 
+            align-items: center;">
+    <a href="#home" style="text-decoration: none; font-size: 16px;  padding: 8px 12px; border-radius: 8px; transition: all 0.3s;">Home</a>
+    <a href="#about" style="text-decoration: none; font-size: 16px;  padding: 8px 12px; border-radius: 8px; transition: all 0.3s;">About</a>
+    <a href="#skills" style="text-decoration: none; font-size: 16px;  padding: 8px 12px; border-radius: 8px; transition: all 0.3s;">Skills</a>
+    <a href="#projects" style="text-decoration: none; font-size: 16px;  padding: 8px 12px; border-radius: 8px; transition: all 0.3s;">Projects</a>
+    <a href="#education" style="text-decoration: none; font-size: 16px;  padding: 8px 12px; border-radius: 8px; transition: all 0.3s;">Education</a>
+    <a href="#contact" style="text-decoration: none; font-size: 16px;  padding: 8px 12px; border-radius: 8px; transition: all 0.3s;">Contact</a>
+</div>
+    <div class="social-links" style="display: flex; justify-content: center;">
+        
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=izharulhaqhere@gmail.com&amp;su=Project" target="_blank" style="text-decoration: none; color: hsl(349, 97%, 63%);"><i class="fas fa-envelope"></i></a>
+        <a href="#" style="text-decoration: none; color: hsl(349, 97%, 63%);"><i class="fab fa-github"></i></a>
+        <a href="#" style="text-decoration: none; color: hsl(349, 97%, 63%);"><i class="fab fa-linkedin"></i></a>
+        <a href="#" style="text-decoration: none; color: hsl(349, 97%, 63%);"><i class="fab fa-twitter"></i></a>
+    </div>
+   <div style="border: 2px dashed #f91e49 ; padding: 10px;">© 2025 Izhar-Ul-Haq — Built with HTML/CSS/JS. Hosted on Netlify.</div> 
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="Assets/JS/main.js"></script>
+<script>
+ 
+</script>
+
+
 </body>
 </html>
